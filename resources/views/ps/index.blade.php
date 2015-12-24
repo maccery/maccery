@@ -91,7 +91,6 @@
         coded by <a href="http://maccery.com" target="_blank">Maccery</a>. Privay policy: submitted personal statements are not stored.</p>
 </div>
 
-<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 <script src="{{ asset('js/global.js') }}" type="text/javascript"></script>
 <script src="{{ asset('js/framework.js') }}" type="text/javascript"></script>
 </body>

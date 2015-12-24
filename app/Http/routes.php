@@ -20,9 +20,7 @@ Route::get('/ps', function () {
 });
 
 
-Route::post('/ps/results', function () {
-    return view('ps/result');
-})->name('ps');
+Route::post('/ps/results', 'PSController@result')->name('ps');
 
 /*
 |--------------------------------------------------------------------------
