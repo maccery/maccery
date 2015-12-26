@@ -24,7 +24,7 @@
 <script>
     $(function(){
         $(".element").typed({
-            strings: ['<a href="https://angel.co/tom-macmichael" target="_top">angel.co</a>', '<a href="https://uk.linkedin.com/in/tommacmichael" target="_top">linkedin</a>', '<a href="http://medium.com/@maccery" target="_top">medium</a>', '<a href="http://twitter.com/maccery" target="_top">twitter</a>', '<a href="http://instagram.com/maccery" target="_top">instagram</a>'],
+            strings: ['<a href="https://angel.co/tom-macmichael" target="_blank">angel.co</a>', '<a href="https://uk.linkedin.com/in/tommacmichael" target="_blank">linkedin</a>', '<a href="http://medium.com/@maccery" target="_blank">medium</a>', '<a href="http://twitter.com/maccery" target="_blank">twitter</a>', '<a href="http://instagram.com/maccery" target="_blank">instagram</a>'],
             typeSpeed: 50,
             backSpeed: 50,
             backDelay: 1200,
@@ -42,7 +42,8 @@
 <div class="content-row">
     <div class="container jumbotron">
         <div class="row text-center">
-            <p class="lead" style="font-family: 'brandon-grotesque'; font-size: 35px;">stalk me on <span class="element"></span></p>
+            <p><small style="font-family: 'brandon-grotesque'; font-size: 25px;">want to know more?</small></p>
+            <p  style="font-family: 'brandon-grotesque'; font-size: 35px;">stalk me on <span class="element"></span></p>
         </div>
     </div>
 </div>

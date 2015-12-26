@@ -6665,8 +6665,11 @@ button.close {
 .small-logo {
   height: 200px;
 }
+#splash-header-wrapper {
+  border-bottom: 7px solid rgba(0, 0, 0, 0.2);
+}
 .lead {
-  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.1);
+  text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.08);
 }
 .lead a {
   color: black;
@@ -6829,7 +6832,7 @@ footer {
   position: absolute;
 }
 #splash-header-wrapper {
-  background-color: #31b7d1;
+  background-color: white;
 }
 /* Carousel */
 .carousel-control.left,
