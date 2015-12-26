@@ -6665,6 +6665,12 @@ button.close {
 .small-logo {
   height: 200px;
 }
+.lead {
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+.lead a {
+  color: black;
+}
 /* Nav */
 #nav {
   position: absolute;
