@@ -1,0 +1,23 @@
+{
+  "name": "maccery",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Tom Macmichael"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "typed.js": "~1.1.1",
+    "bootstrap": "~3.3.6"
+  }
+}

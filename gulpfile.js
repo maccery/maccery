@@ -12,5 +12,8 @@ var elixir = require('laravel-elixir');
  */
 
 elixir(function(mix) {
-    mix.sass('app.scss');
+ mix.less('app.less'); // Copile app.less (in resources) into css
+ mix.scripts([
+  'bower_components/typed.js/js/typed.js'
+ ], 'public/js/app.js', 'bower_components/');
 });
