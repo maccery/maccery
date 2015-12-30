@@ -1068,7 +1068,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "futura-pt", sans-serif;
+  font-family: "brandon-grotesque", sans-serif;
   font-size: 15px;
   line-height: 1.42857143;
   color: #333333;
@@ -1168,7 +1168,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "p22-underground", sans-serif;
+  font-family: "brandon-grotesque", sans-serif;
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
@@ -5907,7 +5907,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "futura-pt", sans-serif;
+  font-family: "brandon-grotesque", sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -6025,7 +6025,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "futura-pt", sans-serif;
+  font-family: "brandon-grotesque", sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -6658,6 +6658,67 @@ button.close {
   }
 }
 /* Import our custom stuff */
+/* Colors */
+/* Variables */
+.navbar-inverse {
+  background-color: white;
+}
+/* Background */
+.splash-header {
+  color: white;
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: no-repeat center center scroll;
+  background-size: cover;
+  -o-background-size: cover;
+  min-height: 600px;
+  background-image: url('https://scontent-lhr3-1.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/1004838_10152090972173356_186325329_n.jpg?oh=b1bbff180302b33b750c0f6e559472cb&oe=56D86806');
+}
+#splash-header,
+#splash-header-wrapper {
+  position: absolute;
+}
+#splash-header-wrapper {
+  background-color: white;
+}
+/* Carousel */
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none;
+}
+.carousel-indicators li {
+  background-color: #31b7d1;
+  background-color: rgba(70, 70, 70, 0.25);
+}
+.carousel-indicators .active {
+  background-color: #444;
+}
+.carousel-controls {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+}
+.carousel-indicators {
+  top: 0px;
+}
+.carousel-inner {
+  top: 30px;
+}
+/* Search input */
+.splash-header {
+  color: white;
+}
+.splash-header input {
+  background-color: rgba(255, 255, 255, 0.86);
+  width: 50%;
+  border: none;
+  font-size: 39px;
+  height: 80px;
+  padding: 20px;
+  color: #555555;
+}
 /* Global classes */
 .padding {
   padding: 20px;
@@ -6668,11 +6729,25 @@ button.close {
 #splash-header-wrapper {
   border-bottom: 7px solid rgba(0, 0, 0, 0.2);
 }
-.lead {
+/* Maccery styles*/
+h1,
+h2 {
   text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.08);
 }
-.lead a {
+h1 a,
+h2 a {
   color: black;
+}
+h1 {
+  font-size: 95px;
+  font-weight: normal;
+}
+h2 {
+  font-size: 55px;
+  font-weight: normal;
+}
+#head {
+  font-size: 35px;
 }
 /* Nav */
 #nav {
@@ -6809,170 +6884,6 @@ footer {
   footer p {
     text-align: center;
   }
-}
-/* Colors */
-/* Variables */
-.navbar-inverse {
-  background-color: white;
-}
-/* Background */
-.splash-header {
-  color: white;
-  display: table;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background: no-repeat center center scroll;
-  background-size: cover;
-  -o-background-size: cover;
-  min-height: 600px;
-}
-#splash-header,
-#splash-header-wrapper {
-  position: absolute;
-}
-#splash-header-wrapper {
-  background-color: white;
-}
-/* Carousel */
-.carousel-control.left,
-.carousel-control.right {
-  background-image: none;
-}
-.carousel-indicators li {
-  background-color: #31b7d1;
-  background-color: rgba(70, 70, 70, 0.25);
-}
-.carousel-indicators .active {
-  background-color: #444;
-}
-.carousel-controls {
-  position: relative;
-  width: 300px;
-  margin: 0 auto;
-}
-.carousel-indicators {
-  top: 0px;
-}
-.carousel-inner {
-  top: 30px;
-}
-/* Search input */
-.splash-header {
-  color: white;
-}
-.splash-header input {
-  background-color: rgba(255, 255, 255, 0.86);
-  width: 50%;
-  border: none;
-  font-size: 39px;
-  height: 80px;
-  padding: 20px;
-  color: #555555;
-}
-/*!
- * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
-/* Toggle Styles */
-#sidebar-outer-wrapper {
-  padding-left: 0;
-  transition: all 0.5s ease;
-}
-#sidebar-outer-wrapper.toggled {
-  padding-left: 250px;
-}
-#sidebar-wrapper {
-  z-index: 1000;
-  position: fixed;
-  left: 250px;
-  width: 0;
-  height: 100%;
-  margin-left: -250px;
-  overflow-y: auto;
-  background: #000;
-  transition: all 0.5s ease;
-}
-#sidebar-outer-wrapper.toggled #sidebar-wrapper {
-  width: 250px;
-}
-#page-content-wrapper {
-  width: 100%;
-  position: absolute;
-  padding: 15px;
-}
-#sidebar-outer-wrapper.toggled #page-content-wrapper {
-  position: absolute;
-  margin-right: -250px;
-}
-/* Sidebar Styles */
-.sidebar-nav {
-  position: absolute;
-  top: 0;
-  width: 250px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.sidebar-nav li {
-  text-indent: 20px;
-  line-height: 40px;
-}
-.sidebar-nav li a {
-  display: block;
-  text-decoration: none;
-  color: #999999;
-}
-.sidebar-nav li a:hover {
-  text-decoration: none;
-  color: #fff;
-  background: rgba(255, 255, 255, 0.2);
-}
-.sidebar-nav li a:active,
-.sidebar-nav li a:focus {
-  text-decoration: none;
-}
-.sidebar-nav > .sidebar-brand {
-  height: 65px;
-  font-size: 18px;
-  line-height: 60px;
-}
-.sidebar-nav > .sidebar-brand a {
-  color: #999999;
-}
-.sidebar-nav > .sidebar-brand a:hover {
-  color: #fff;
-  background: none;
-}
-@media (min-width: 768px) {
-  #sidebar-outer-wrapper {
-    padding-left: 250px;
-  }
-  #sidebar-outer-wrapper.toggled {
-    padding-left: 0;
-  }
-  #sidebar-wrapper {
-    width: 250px;
-  }
-  #sidebar-outer-wrapper.toggled #sidebar-wrapper {
-    width: 0;
-  }
-  #page-content-wrapper {
-    padding: 20px;
-    position: relative;
-  }
-  #sidebar-outer-wrapper.toggled #page-content-wrapper {
-    position: relative;
-    margin-right: 0;
-  }
-}
-.deleted {
-  color: white;
-  background-color: red;
-}
-.deleted a {
-  color: white;
 }
 
 /*# sourceMappingURL=app.css.map */

@@ -10,20 +10,22 @@
     <meta name="keywords" content="developer, tom macmichael, student, edinburgh, php, html, maths"/>
     <meta name="copyright" content="Copyright Maccery.com 2013">
     <meta name="author" content="Maccery">
-    <meta name="email" content="tom@yourtaximeter.com">
+    <meta name="email" content="tom@yatter.chat">
     <meta name="Rating" content="General">
     <meta name="Revisit-after" content="1 Days">
     <meta name="ROBOTS" content="INDEX, FOLLOW"/>
+    <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1; user-scalable=0;">
     <meta property="description" content="Freelance web developer from The University of Edinburgh."/>
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
     <title>Maccery - Web Development</title>
 </head>
 <body>
-<div id="splash-header-wrapper" class="splash-header"  style="background-image:url('https://scontent-lhr3-1.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/1004838_10152090972173356_186325329_n.jpg?oh=b1bbff180302b33b750c0f6e559472cb&oe=56D86806');">
+<div id="splash-header-wrapper" class="splash-header">
     <div id="splash-header" class="splash-header"></div>
 </div>
 <script>
     $(function(){
-        $(".element").typed({
+        $(".typing").typed({
             strings: ['<a href="https://angel.co/tom-macmichael" target="_blank">angel.co</a>', '<a href="https://uk.linkedin.com/in/tommacmichael" target="_blank">linkedin</a>', '<a href="http://medium.com/@maccery" target="_blank">medium</a>', '<a href="http://twitter.com/maccery" target="_blank">twitter</a>', '<a href="http://instagram.com/maccery" target="_blank">instagram</a>'],
             typeSpeed: 50,
             backSpeed: 50,
@@ -35,15 +37,16 @@
 </script>
 <header class="splash-header">
     <div class="text-vertical-center center">
-        <p class="lead" style="font-family: 'brandon-grotesque'; font-size: 95px;">hey, i'm tom.</p>
-        <p class="lead" style="font-family: 'brandon-grotesque'; font-size: 55px;">I do startups + websites</p>
+        <h1>hey, i'm tom.</h1>
+        <h2>I do startups + websites</h2>
     </div>
 </header>
 <div class="content-row">
     <div class="container jumbotron">
         <div class="row text-center">
-            <p><small style="font-family: 'brandon-grotesque'; font-size: 25px;">want to know more?</small></p>
-            <p  style="font-family: 'brandon-grotesque'; font-size: 35px;">stalk me on <span class="element"></span></p>
+            <p id="head"><small>want to know more?</small><br>
+                stalk me on <span class="typing"></span>
+            </p>
         </div>
     </div>
 </div>
