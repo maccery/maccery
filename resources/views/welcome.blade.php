@@ -38,7 +38,7 @@
 <header class="splash-header">
     <div class="text-vertical-center center">
         <h1>hey, i'm tom.</h1>
-        <h2>I do startups + websites</h2>
+        <h2>I like making websites</h2>
     </div>
 </header>
 <div class="content-row">
