@@ -77,7 +77,7 @@ ini_set("display_errors", 1);
 		else
 			return FALSE;
 	}
-
+$ie = FALSE;
 	if (ae_detect_ie())
 	{
 		$ie = 'true';
