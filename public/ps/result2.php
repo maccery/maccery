@@ -306,6 +306,7 @@ alt=\"$alt\" title=\"$alt\" style=\"BACKGROUND-COLOR: yellow\">$original</FONT>"
 		{
 			$statement = '<b>1</b> ';
 		}
+		$maxwordlength = $lines;
 		foreach ($ex as $word)
 		{
 			if ($word != 'NEW77LINE')
