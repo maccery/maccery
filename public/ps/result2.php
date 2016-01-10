@@ -1,6 +1,5 @@
 <?php
-error_reporting(E_ALL);
-ini_set("display_errors", 1);
+
 	function wordconvert($src)
 	{
 		$src = str_replace('$', 'USD ', $src);
@@ -306,7 +305,7 @@ alt=\"$alt\" title=\"$alt\" style=\"BACKGROUND-COLOR: yellow\">$original</FONT>"
 		{
 			$statement = '<b>1</b> ';
 		}
-		$maxwordlength = $lines;
+		$maxwordlength = $lines = $culm = $extrachars = 0;
 		foreach ($ex as $word)
 		{
 			if ($word != 'NEW77LINE')
@@ -322,13 +321,12 @@ alt=\"$alt\" title=\"$alt\" style=\"BACKGROUND-COLOR: yellow\">$original</FONT>"
 			}
 
 
-			if (($_POST['generic']) || (check($word)))
+			if (isset($_POST['generic']) || (check($word)))
 			{
 				$wordi = lastletter($word);
 				$wordi = strtolower($wordi);
 				$words[$wordi] = @$words[$wordi] + 1;
 			}
-
 
 			if (($culm + strlen($word)) > '94')
 			{
@@ -421,6 +419,7 @@ alt=\"$alt\" title=\"$alt\" style=\"BACKGROUND-COLOR: yellow\">$original</FONT>"
 <div class="row">
 	<div class="col-md-3">
 <?php
+$list = $color = "";
 echo "
 		<h3>Stats</h3>
 <font color=\"$color\"><b>Lines:</b> $lines / 47<br>
