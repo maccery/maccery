@@ -60,7 +60,7 @@
 <div class="container" id="statistics">
     <form class="container form-horizontal" role="form" action="{{ route('ps') }}" method="post" target="#ps-result">
         <div class="form-group">
-            <textarea name="ps" class="form-control" placeholder="Paste your personal statement here" rows="10"></textarea>
+            <textarea name="statement" class="form-control" placeholder="Paste your personal statement here" rows="10"></textarea>
         </div>
         <div class="form-group">
             <div class="checkbox">

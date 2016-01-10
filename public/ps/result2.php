@@ -1,6 +1,4 @@
 <?php
-error_reporting(E_ALL);
-ini_set("display_errors", 1);
 	function wordconvert($src)
 	{
 		$src = str_replace('$', 'USD ', $src);
@@ -77,7 +75,7 @@ ini_set("display_errors", 1);
 		else
 			return FALSE;
 	}
-$ie = FALSE;
+
 	if (ae_detect_ie())
 	{
 		$ie = 'true';
@@ -102,7 +100,7 @@ $ie = FALSE;
 	}
 
 
-	if ($_POST['ps'] != '')
+	if ($_POST[ps] != '')
 	{
 		function highlight($word)
 		{
@@ -114,7 +112,7 @@ $ie = FALSE;
 			$word = strtolower(str_replace(';', '', $word));
 			$word = strtolower(str_replace(',', '', $word));
 
-			$highlight_these = explode(",",$_POST['highlight']);
+			$highlight_these = explode(",",$_POST[highlight]);
 
 			if ((is_numeric($word)) && $word <= 100)
 			{
@@ -286,7 +284,7 @@ alt=\"$alt\" title=\"$alt\" style=\"BACKGROUND-COLOR: yellow\">$original</FONT>"
 
 		}
 
-		$original = urldecode(wordconvert($_POST['ps']));
+		$original = urldecode(wordconvert($_POST[ps]));
 		$ps = strip_tags(urldecode(stripslashes(str_replace('%u2019', "'", $original))));
 		$ps = str_replace('“', '"', $ps);
 		$pss = strip_tags(urldecode(stripslashes(str_replace('
@@ -302,11 +300,10 @@ alt=\"$alt\" title=\"$alt\" style=\"BACKGROUND-COLOR: yellow\">$original</FONT>"
 		$wordcount = count($ex) - 1;
 		$lines = '1';
 
-		if ($pss != '' && $_POST['linenumbers'])
+		if ($pss != '' && $_POST[linenumbers])
 		{
 			$statement = '<b>1</b> ';
 		}
-		$maxwordlength = $lines = $culm = $extrachars = 0;
 		foreach ($ex as $word)
 		{
 			if ($word != 'NEW77LINE')
@@ -322,12 +319,13 @@ alt=\"$alt\" title=\"$alt\" style=\"BACKGROUND-COLOR: yellow\">$original</FONT>"
 			}
 
 
-			if (isset($_POST['generic']) || (check($word)))
+			if (($_POST[generic]) || (check($word)))
 			{
 				$wordi = lastletter($word);
 				$wordi = strtolower($wordi);
 				$words[$wordi] = @$words[$wordi] + 1;
 			}
+
 
 			if (($culm + strlen($word)) > '94')
 			{
@@ -336,7 +334,7 @@ alt=\"$alt\" title=\"$alt\" style=\"BACKGROUND-COLOR: yellow\">$original</FONT>"
 				if ($word == 'NEW77LINE')
 				{
 					$lines = $lines + 1;
-					if ($_POST['linenumbers'])
+					if ($_POST[linenumbers])
 					{
 						$line = $lines;
 					}
@@ -349,7 +347,7 @@ alt=\"$alt\" title=\"$alt\" style=\"BACKGROUND-COLOR: yellow\">$original</FONT>"
 
 					$lines = $lines + 1;
 
-					if ($_POST['linenumbers'])
+					if ($_POST[linenumbers])
 					{
 						$line = "<b>$lines</b>";
 					}
@@ -376,7 +374,7 @@ alt=\"$alt\" title=\"$alt\" style=\"BACKGROUND-COLOR: yellow\">$original</FONT>"
 						$extrachars = $extrachars + 1;
 					}
 
-					if ($_POST['linenumbers'])
+					if ($_POST[linenumbers])
 					{
 						$line = "<b>$lines</b>";
 					}
@@ -420,7 +418,6 @@ alt=\"$alt\" title=\"$alt\" style=\"BACKGROUND-COLOR: yellow\">$original</FONT>"
 <div class="row">
 	<div class="col-md-3">
 <?php
-$list = $color = "";
 echo "
 		<h3>Stats</h3>
 <font color=\"$color\"><b>Lines:</b> $lines / 47<br>
