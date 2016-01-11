@@ -10,7 +10,7 @@
         </a>
         <a href="{{ route('newton-raphson') }}">
         <div class="col-sm-6">
-            <h2>Newton-Raphson calculator</h2>
+            <h2>Newton-Raphson Calculator</h2>
             <p>Uses Newton-Raphson method and shows workings for you.</p>
         </div>
         </a>
