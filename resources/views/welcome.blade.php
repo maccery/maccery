@@ -35,19 +35,49 @@
         });
     });
 </script>
-<header class="splash-header">
-    <div class="text-vertical-center center">
-        <h1>hey, i'm tom.</h1>
-        <h2>I like making websites</h2>
-    </div>
-</header>
-<div class="content-row">
-    <div class="container jumbotron">
-        <div class="row text-center">
-            <p id="head"><small>want to know more?</small><br>
-                stalk me on <span class="typing"></span>
-            </p>
+<div class="intro">
+    <header class="splash-header">
+        <div class="text-vertical-center center">
+            <h1>hey, i'm tom.</h1>
+            <h2>I like making stuff</h2>
         </div>
+    </header>
+    <div class="content-row">
+        <div class="container jumbotron">
+            <div class="row text-center">
+                <p id="head"><small>want to know more?</small><br>
+                    stalk me on <span class="typing"></span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content-row-grey text-center">
+    <div class="container padding">
+        <a href="http://yourtaximeter.com">
+            <div class="col-sm-6">
+                <h2>YourTaximeter</h2>
+                <p>A startup aimed at taxi fare estimates. I founded and codeveloped this site, currently 60k a month using it.</p>
+            </div>
+        </a>
+        <a href="http://yatter.chat">
+            <div class="col-sm-6">
+                <h2>Yatter</h2>
+                <p>Connecting university students with nearby friends. I cofounded and continue to develop this while at university.</p>
+            </div>
+        </a>
+        <a href="{{ route('maths') }}">
+            <div class="col-sm-6">
+                <h2>Maths Tools</h2>
+                <p>10,000 people a month use my simple maths tools that I made when I was 16.</p>
+            </div>
+        </a>
+        <a href="{{ route('ps') }}">
+            <div class="col-sm-6">
+                <h2>Personal Statement Tools</h2>
+                <p>Hundreds of thousands have used my personal statement analyser for university applications.</p>
+            </div>
+        </a>
     </div>
 </div>
 </html>

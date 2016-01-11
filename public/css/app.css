@@ -1068,7 +1068,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "brandon-grotesque", sans-serif;
+  font-family: "avenir", "proxima-nova", sans-serif;
   font-size: 15px;
   line-height: 1.42857143;
   color: #333333;
@@ -5907,7 +5907,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "brandon-grotesque", sans-serif;
+  font-family: "avenir", "proxima-nova", sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -6025,7 +6025,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "brandon-grotesque", sans-serif;
+  font-family: "avenir", "proxima-nova", sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -6730,23 +6730,23 @@ button.close {
   border-bottom: 7px solid rgba(0, 0, 0, 0.2);
 }
 /* Maccery styles*/
-h1,
-h2 {
+.intro h1,
+.intro h2 {
   text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.08);
 }
-h1 a,
-h2 a {
+.intro h1 a,
+.intro h2 a {
   color: black;
 }
-h1 {
+.intro h1 {
   font-size: 95px;
   font-weight: normal;
 }
-h2 {
+.intro h2 {
   font-size: 55px;
   font-weight: normal;
 }
-#head {
+.intro #head {
   font-size: 35px;
 }
 /* Nav */

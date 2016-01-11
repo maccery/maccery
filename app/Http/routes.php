@@ -17,7 +17,7 @@ Route::get('/', function () {
 
 Route::get('/ps', function () {
     return view('ps/index');
-});
+})->name('ps');
 
 Route::get('/maths', function () {
     return view('maths/index');
@@ -35,7 +35,7 @@ Route::get('/maths/fixed-point', function () {
     return view('maths/fixed_point');
 })->name('fixed-point');
 
-Route::post('/ps/results', 'PSController@result')->name('ps');
+Route::post('/ps/results', 'PSController@result')->name('ps/results');
 
 /*
 |--------------------------------------------------------------------------

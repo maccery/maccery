@@ -42,20 +42,22 @@
         <h3>the original personal statement helper</h3>
     </div>
 </div>
-<div class="container">
-    <ul class="list list-unstyled">
-        <li>No need to login to UCAS</li>
-        <li>It uses UCAS's method of counting lines (94 characters max per line)</li>
-        <li>It uses UCAS's method of counting characters</li>
-        <li>See how small changes affect your line and character count instantly, unlike on UCAS's clunky online form</li>
-        <li>Optimised for smartphones for you on-the-go people</li>
-        <li><b>Helping tens of thousands of students every year</b>!</li>
-    </ul>
+<div class="content-row">
+    <div class="container">
+        <ul class="list list-unstyled">
+            <li>No need to login to UCAS</li>
+            <li>It uses UCAS's method of counting lines (94 characters max per line)</li>
+            <li>It uses UCAS's method of counting characters</li>
+            <li>See how small changes affect your line and character count instantly, unlike on UCAS's clunky online form</li>
+            <li>Optimised for smartphones for you on-the-go people</li>
+            <li><b>Helping tens of thousands of students every year</b>!</li>
+        </ul>
+    </div>
 </div>
 <hr>
 <div class="content-row">
     <div class="container">
-        <form class="container form-horizontal" role="form" action="{{ route('ps') }}" method="post" target="#ps-result">
+        <form class="container form-horizontal" role="form" action="{{ route('ps/results') }}" method="post" target="#ps-result">
             <div class="form-group">
                 <textarea name="statement" class="form-control" placeholder="Paste your personal statement here" rows="10"></textarea>
             </div>
@@ -66,8 +68,10 @@
     </div>
 </div>
 <hr>
-<div class="container" id="ps-result">
-</div>
+<div class="content-row">
+    <div class="container" id="ps-result">
+    </div>
+    </div>
 <hr>
 <div id="copyright" class="container">
     <h4>Like this? <a href="{{ route('home') }}">Get in touch.</a></h4>
