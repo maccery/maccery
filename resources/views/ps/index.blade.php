@@ -49,11 +49,9 @@
         <li>It uses UCAS's method of counting lines (94 characters max per line)</li>
         <li>It uses UCAS's method of counting characters</li>
         <li>Get statistics about your statement</li>
-        <li>Instantly see where you have used abbreviations</li>
-        <li>Highlight words to see where you repeat yourself</li>
         <li>See how small changes affect your line and character count instantly, unlike on UCAS's clunky online form</li>
         <li>Optimised for smartphones for you on-the-go people</li>
-        <li>Word cloud to see where your emphasis is</li>
+        <li><b>Update (January 2016)</b>: This has been completely re-written, new features to come soon!</li>
     </ul>
 </div>
 <hr>
@@ -68,14 +66,6 @@
                     <input type="checkbox" name="linenumbers" checked> Show line numbers
                 </label>
             </div>
-            <div class="checkbox">
-                <label>
-                    <input type="checkbox" name="generic"> Include generic words in word occurences
-                </label>
-            </div>
-        </div>
-        <div class="form-group">
-            <input name="highlight" class="form-control" placeholder="Highlight these words (separate with commas)">
         </div>
         <div class="form group">
             <button type="submit" class="btn btn-danger">Analyse</button>
@@ -91,6 +81,7 @@
         coded by <a href="http://maccery.com" target="_blank">Maccery</a>. Privay policy: submitted personal statements are not stored.</p>
 </div>
 
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 <script src="{{ asset('js/global.js') }}" type="text/javascript"></script>
 <script src="{{ asset('js/framework.js') }}" type="text/javascript"></script>
 </body>

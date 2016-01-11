@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/pss', function () {
+Route::get('/ps', function () {
     return view('ps/index');
 });
 
