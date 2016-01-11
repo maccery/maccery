@@ -68,7 +68,7 @@ class PSController extends Controller
             'character_count' => $character_count,
         );
 
-        return view('ps/result2', $data);
+        return view('ps/result', $data);
 
 
     }

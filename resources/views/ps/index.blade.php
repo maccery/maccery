@@ -1,7 +1,8 @@
-
 <!DOCTYPE html>
 <html>
 <head>
+    <script src="https://use.typekit.net/ghh5jln.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8"/>
     <meta name="copyright" content="Copyright Maccery.com 2013">
     <meta name="email" content="tom@yourtaximeter.com">
@@ -16,8 +17,7 @@
     <meta name="keywords" content="personal statement, ucas, ucas line count, university, university applications, word cloud, word occurences, personal statement help, ucas application" />
     <meta name="author" content="Maccery">
     <meta name="Rating" content="General">
-    <link rel="stylesheet" href="{{ asset('css/framework.css') }}" type="text/css"/>
-    <link rel="stylesheet" href="{{ asset('css/global.css') }}}" type="text/css"/>
+    <link rel="stylesheet" href="{{ asset('css/ps.css') }}" type="text/css"/>
     <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1; user-scalable=0;">
     <title>Personal Statement Helper | UCAS line simulator, word count and more! | Maccery.com</title>
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/ps/favicon.ico') }}">
@@ -36,49 +36,41 @@
     </script>
 </head>
 <body>
-
-<div class="jumbotron" id="header">
-    <h1><a href="/">maccery</a>/ps</h1>
-
-    <h2>taking the stress out of ucas</h2>
+<div class="content-row" id="header">
+    <div class="container">
+        <h1><a href="/">maccery</a>/ps</h1>
+        <h3>the original personal statement helper</h3>
+    </div>
 </div>
 <div class="container">
-    <h2>Let us analyse your personal statement</h2>
-    <ul>
+    <ul class="list list-unstyled">
         <li>No need to login to UCAS</li>
         <li>It uses UCAS's method of counting lines (94 characters max per line)</li>
         <li>It uses UCAS's method of counting characters</li>
-        <li>Get statistics about your statement</li>
         <li>See how small changes affect your line and character count instantly, unlike on UCAS's clunky online form</li>
         <li>Optimised for smartphones for you on-the-go people</li>
         <li><b>Update (January 2016)</b>: This has been completely re-written, new features to come soon!</li>
     </ul>
 </div>
 <hr>
-<div class="container" id="statistics">
-    <form class="container form-horizontal" role="form" action="{{ route('ps') }}" method="post" target="#ps-result">
-        <div class="form-group">
-            <textarea name="statement" class="form-control" placeholder="Paste your personal statement here" rows="10"></textarea>
-        </div>
-        <div class="form-group">
-            <div class="checkbox">
-                <label>
-                    <input type="checkbox" name="linenumbers" checked> Show line numbers
-                </label>
+<div class="content-row">
+    <div class="container">
+        <form class="container form-horizontal" role="form" action="{{ route('ps') }}" method="post" target="#ps-result">
+            <div class="form-group">
+                <textarea name="statement" class="form-control" placeholder="Paste your personal statement here" rows="10"></textarea>
             </div>
-        </div>
-        <div class="form group">
-            <button type="submit" class="btn btn-danger">Analyse</button>
-        </div>
-    </form>
+            <div class="form group">
+                <button type="submit" class="btn btn-danger">Analyse</button>
+            </div>
+        </form>
+    </div>
 </div>
 <hr>
 <div class="container" id="ps-result">
 </div>
 <hr>
 <div id="copyright" class="container">
-    <p>Copyright &copy; 2013 <a href="http://maccery.com" target="_blank">Maccery</a>. Design and
-        coded by <a href="http://maccery.com" target="_blank">Maccery</a>. Privay policy: submitted personal statements are not stored.</p>
+    <p>Copyright &copy; 2013-16 <a href="http://maccery.com" target="_blank">Maccery</a>. <b>Submitted personal statements are not stored.</b></p>
 </div>
 
 <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
