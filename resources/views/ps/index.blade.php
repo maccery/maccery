@@ -4,12 +4,12 @@
     <script src="https://use.typekit.net/ghh5jln.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8"/>
-    <meta name="copyright" content="Copyright Maccery.com 2013">
-    <meta name="email" content="tom@yourtaximeter.com">
+    <meta name="copyright" content="Copyright Maccery.com 2016">
+    <meta name="email" content="support@yourtaximeter.com">
     <meta name="Rating" content="General">
     <meta name="Revisit-after" content="1 Days">
     <meta name="ROBOTS" content="INDEX, FOLLOW"/>
-    <meta property="og:image" content="http://maccery.com/ps/fblogo.png" />
+    <meta property="og:image" content="{{ asset('ps/fblogo.png') }}" />
     <meta property="og:title" content="Maccery's Personal Statement Helper | UCAS line simulator, word count and more!" />
     <meta property="og:url" content="http://maccery.com/ps/" />
     <meta property="og:description" content="Analyse your personal statement, simulate UCAS's strange line counting and much more - all in real time. "/>
@@ -74,7 +74,7 @@
     <p>Copyright &copy; 2013-16 <a href="http://maccery.com" target="_blank">Maccery</a>. <b>Submitted personal statements are not stored.</b></p>
 </div>
 
-<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
 <script src="{{ asset('js/global.js') }}" type="text/javascript"></script>
 <script src="{{ asset('js/framework.js') }}" type="text/javascript"></script>
 </body>
