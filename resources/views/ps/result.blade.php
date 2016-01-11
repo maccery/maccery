@@ -10,7 +10,7 @@
 @endif
 @if ($character_count <= 4000 AND $line_count <= 47)
 <div class="alert alert-success" role="alert">
-    <p><b>Excellent!</b> Your personal statement is within UCAS's line and character count limits.</p>
+    <p><b>Excellent!</b> Your personal statement is within UCAS's line and character count limits. Good luck with your application!</p>
 </div>
 @endif
 <div class="row">
@@ -37,7 +37,7 @@
         * Every new line break entered counts as 2 characters as according to UCAS.
 	</div>
     <div class="col-md-6">
-        <h3>Popular words</h3>
+        <h3>Popular Words</h3>
         <div class="popular-words">
             <ul class="list list-unstyled">
             @foreach ($popular_words as $word => $count)

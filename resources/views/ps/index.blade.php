@@ -70,6 +70,7 @@
 </div>
 <hr>
 <div id="copyright" class="container">
+    <h4>Like this? <a href="{{ route('home') }}">Get in touch.</a></h4>
     <p>Copyright &copy; 2013-16 <a href="http://maccery.com" target="_blank">Maccery</a>. <b>Submitted personal statements are not stored.</b></p>
 </div>
 

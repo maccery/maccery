@@ -69,7 +69,7 @@ class PSController extends Controller
             'line_count' => $line_number,
             'number_of_exclamation_marks' => substr_count($statement, '!'),
             'number_of_commas' => substr_count($statement, ','),
-            'number_of_semi_colons' => substr_count($statement, '!'),
+            'number_of_semi_colons' => substr_count($statement, ';'),
             'number_of_full_stops' => substr_count($statement, '.'),
             'number_of_questions' => substr_count($statement, '?'),
             'split_statement' => $split_statement,
