@@ -1,4 +1,18 @@
-
+@if ($character_count > 4000)
+    <div class="alert alert-danger" role="alert">
+        <p>You've exceeded the UCAS character count.</p>
+    </div>
+@endif
+@if ($line_count > 47)
+    <div class="alert alert-danger" role="alert">
+        <p>You've exceeded the UCAS line count.</p>
+    </div>
+@endif
+@if ($character_count <= 4000 AND $line_count <= 47)
+<div class="alert alert-success" role="alert">
+    <p><b>Excellent!</b> Your personal statement is within UCAS's line and character count limits.</p>
+</div>
+@endif
 <div class="row">
     <div class="col-md-6">
 
@@ -20,9 +34,9 @@
             <li><b>Number of full-stops:</b> {{ $number_of_full_stops }}</li>
             <li><b>Number of questions:</b> {{ $number_of_questions }}</li>
         </ul>
-        * Every new line entered (purposefully), counts as 2 characters as according to UCAS.
+        * Every new line break entered counts as 2 characters as according to UCAS.
 	</div>
-    <div class="col-md-3">
+    <div class="col-md-6">
         <h3>Popular words</h3>
         <div class="popular-words">
             <ul class="list list-unstyled">

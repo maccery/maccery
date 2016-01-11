@@ -14,10 +14,14 @@ class PSController extends Controller
     {
         $statement = $request->input('statement');
 
+        // we need to split up the personal statement by the line breaks
         $lines = explode(PHP_EOL, $statement);
 
+        // initialise our variables
         $popular_words = $split_statement = array();
         $line_number = $line_character_count = $character_count = 0;
+
+        // loop through each line
         foreach ($lines as $line)
         {
             if ($line_number != 0)
@@ -28,6 +32,7 @@ class PSController extends Controller
             $line_character_count = 0;
             $line_number++;
 
+            // split up the words on this line and loop through them
             $words = explode(' ', $line);
             $word_count = 0;
             foreach ($words as $word)
