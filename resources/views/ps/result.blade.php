@@ -22,6 +22,16 @@
         </ul>
         * Every new line entered (purposefully), counts as 2 characters as according to UCAS.
 	</div>
+    <div class="col-md-3">
+        <h3>Popular words</h3>
+        <div class="popular-words">
+            <ul class="list list-unstyled">
+            @foreach ($popular_words as $word => $count)
+            <li>{{ $word }} ({{ $count }})</li>
+            @endforeach
+            </ul>
+        </div>
+    </div>
 </div>
 <div class="row">
     <div class="col-md-12">

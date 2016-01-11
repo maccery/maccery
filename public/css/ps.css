@@ -6663,5 +6663,9 @@ button.close {
 .navbar-inverse {
   background-color: white;
 }
+.popular-words {
+  overflow: auto;
+  height: 200px;
+}
 
 /*# sourceMappingURL=ps.css.map */

@@ -16,7 +16,7 @@ class PSController extends Controller
 
         $lines = explode(PHP_EOL, $statement);
 
-        $split_statement = array();
+        $popular_words = $split_statement = array();
         $line_number = $line_character_count = $character_count = 0;
         foreach ($lines as $line)
         {
@@ -43,6 +43,9 @@ class PSController extends Controller
                 // add this word to our multidimensional array
                 $split_statement[$line_number][] = $word;
 
+                // increment the count for this word
+                (isset($popular_words[$word])) ? $popular_words[$word]++ : $popular_words[$word] = 1;
+
                 $line_character_count += strlen($word); // we have to add one for the space bar
                 $character_count += strlen($word);
 
@@ -66,11 +69,17 @@ class PSController extends Controller
             'number_of_questions' => substr_count($statement, '?'),
             'split_statement' => $split_statement,
             'character_count' => $character_count,
+            'popular_words' => $this->sortPopularWords($popular_words)
         );
 
         return view('ps/result', $data);
 
+    }
 
+    function sortPopularWords(array $words)
+    {
+        arsort($words);
+        return $words;
     }
 
 }
