@@ -49,7 +49,7 @@
         <li>It uses UCAS's method of counting characters</li>
         <li>See how small changes affect your line and character count instantly, unlike on UCAS's clunky online form</li>
         <li>Optimised for smartphones for you on-the-go people</li>
-        <li><b>Update (January 2016)</b>: This has been completely re-written, new features to come soon!</li>
+        <li><b>Helping tens of thousands of students every year</b>!</li>
     </ul>
 </div>
 <hr>

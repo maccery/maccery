@@ -33,6 +33,7 @@
             <li><b>Number of semi-colons:</b> {{ $number_of_semi_colons }}</li>
             <li><b>Number of full-stops:</b> {{ $number_of_full_stops }}</li>
             <li><b>Number of questions:</b> {{ $number_of_questions }}</li>
+            <li><b>Largest word:</b> {{ $largest_word }}</li>
         </ul>
         * Every new line break entered counts as 2 characters as according to UCAS.
 	</div>

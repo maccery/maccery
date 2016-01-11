@@ -49,7 +49,8 @@ class PSController extends Controller
                 $split_statement[$line_number][] = $word;
 
                 // increment the count for this word
-                (isset($popular_words[$word])) ? $popular_words[$word]++ : $popular_words[$word] = 1;
+                $cleaned_word = $this->cleanWord($word);
+                (isset($popular_words[$cleaned_word])) ? $popular_words[$cleaned_word]++ : $popular_words[$cleaned_word] = 1;
 
                 $line_character_count += strlen($word); // we have to add one for the space bar
                 $character_count += strlen($word);
@@ -74,17 +75,38 @@ class PSController extends Controller
             'number_of_questions' => substr_count($statement, '?'),
             'split_statement' => $split_statement,
             'character_count' => $character_count,
-            'popular_words' => $this->sortPopularWords($popular_words)
+            'popular_words' => $this->sortPopularWords($popular_words),
+            'largest_word' => $this->largestWord($popular_words)
         );
 
         return view('ps/result', $data);
 
     }
 
+    function largestWord(array $words)
+    {
+        $largest_word = null;
+        foreach ($words as $word => $count)
+        {
+            if (strlen($this->cleanWord($word)) > strlen($largest_word))
+            {
+                $largest_word = $word;
+            }
+        }
+        return $largest_word;
+    }
+
     function sortPopularWords(array $words)
     {
         arsort($words);
         return $words;
+    }
+
+    function cleanWord($word)
+    {
+        // Remove punctuation from word
+        $word = preg_replace('/^\PL+|\PL\z/', '', $word);
+        return $word;
     }
 
 }
