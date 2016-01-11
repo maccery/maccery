@@ -1,5 +1,6 @@
 @extends('maths.master')
 @section('content')
+@include('maths.navigation')
 <div class="container" id="statistics">
     <h2>Statistics calculator</h2>
 

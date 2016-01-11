@@ -2,3 +2,29 @@
   overflow: auto;
   height: 200px;
 }
+
+
+/* Custom variables */
+@content-transparency: 1;
+
+/* Content rows */
+.content-row {
+  .content-row(white, @content-transparency);
+  .font-color(white);
+  a { .link-color(white); }
+  a:hover { .link-hover-color(white); }
+}
+
+.content-row-brand {
+  .content-row(@brand-primary, @content-transparency);
+  color: white;
+  a { color: white; }
+  a:hover { color: white; }
+}
+
+.content-row-grey {
+  .content-row(#f1f1f1, @content-transparency);
+  .font-color(#f1f1f1);
+  a { .link-color(#f1f1f1); }
+  a:hover { .link-hover-color(#f1f1f1); }
+}

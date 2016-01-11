@@ -21,19 +21,19 @@ Route::get('/ps', function () {
 
 Route::get('/maths', function () {
     return view('maths/index');
-});
+})->name('maths');
 Route::get('/maths/spearmans-rank', function () {
     return view('maths/spearmans_rank');
-});
+})->name('spearmans-rank');
 Route::get('/maths/decimal-search', function () {
     return view('maths/decimal_search');
-});
-Route::get('/maths/newtons-method', function () {
+})->name('decimal-search');
+Route::get('/maths/newton-raphson', function () {
     return view('maths/newtons_method');
-});
+})->name('newton-raphson');
 Route::get('/maths/fixed-point', function () {
     return view('maths/fixed_point');
-});
+})->name('fixed-point');
 
 Route::post('/ps/results', 'PSController@result')->name('ps');
 

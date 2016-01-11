@@ -6658,14 +6658,85 @@ button.close {
   }
 }
 /* Import our custom stuff */
+.popular-words {
+  overflow: auto;
+  height: 200px;
+}
+/* Custom variables */
+/* Content rows */
+.content-row {
+  background-color: #ffffff;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffffff, endColorstr=#ffffffff);
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffffff, endColorstr=#ffffffff);
+  margin: 0;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 100%;
+  color: #383838;
+}
+.content-row .container {
+  max-width: 1100px;
+}
+.content-row p {
+  font-size: 18px;
+  font-weight: lighter;
+}
+.content-row a {
+  color: #b3b3b3;
+}
+.content-row a:hover {
+  color: #cccccc;
+}
+.content-row-brand {
+  background-color: #31b7d1;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff31b7d1, endColorstr=#ff31b7d1);
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff31b7d1, endColorstr=#ff31b7d1);
+  margin: 0;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 100%;
+  color: white;
+}
+.content-row-brand .container {
+  max-width: 1100px;
+}
+.content-row-brand p {
+  font-size: 18px;
+  font-weight: lighter;
+}
+.content-row-brand a {
+  color: white;
+}
+.content-row-brand a:hover {
+  color: white;
+}
+.content-row-grey {
+  background-color: #f1f1f1;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#fff1f1f1, endColorstr=#fff1f1f1);
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#fff1f1f1, endColorstr=#fff1f1f1);
+  margin: 0;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 100%;
+  color: #2a2a2a;
+}
+.content-row-grey .container {
+  max-width: 1100px;
+}
+.content-row-grey p {
+  font-size: 18px;
+  font-weight: lighter;
+}
+.content-row-grey a {
+  color: #a4a4a4;
+}
+.content-row-grey a:hover {
+  color: #bebebe;
+}
 /* Colors */
 /* Variables */
 .navbar-inverse {
   background-color: white;
-}
-.popular-words {
-  overflow: auto;
-  height: 200px;
 }
 
 /*# sourceMappingURL=ps.css.map */

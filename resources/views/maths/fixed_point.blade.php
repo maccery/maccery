@@ -1,5 +1,6 @@
 @extends('maths.master')
 @section('content')
+    @include('maths.navigation')
 <div class="container" id="fixed-point">
     <h2>Fixed point iteration calculator</h2>
 
@@ -35,6 +36,7 @@
             <button type="submit" class="btn btn-danger">Calculate</button>
         </div>
     </form>
+    <hr>
     <div class="result" id="fixed-point-result"></div>
 </div>
 @endsection

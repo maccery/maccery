@@ -4,27 +4,24 @@
     <script src="https://use.typekit.net/ghh5jln.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8"/>
-    <meta name="copyright" content="Copyright Maccery.com 2016">
-    <meta name="email" content="support@yourtaximeter.com">
+    <meta name="copyright" content="Copyright Maccery.com 2013">
+    <meta name="email" content="tom@yourtaximeter.com">
     <meta name="Rating" content="General">
     <meta name="Revisit-after" content="1 Days">
     <meta name="ROBOTS" content="INDEX, FOLLOW"/>
-    <meta property="og:image" content="{{ asset('ps/fblogo.png') }}" />
-    <meta property="og:title" content="Maccery's Personal Statement Helper | UCAS line simulator, word count and more!" />
-    <meta property="og:url" content="http://maccery.com/ps/" />
-    <meta property="og:description" content="Analyse your personal statement, simulate UCAS's strange line counting and much more - all in real time. "/>
-    <meta property="description" content="Analyse your personal statement, simulate UCAS's strange line counting and much more - all in real time. "/>
-    <meta name="keywords" content="personal statement, ucas, ucas line count, university, university applications, word cloud, word occurences, personal statement help, ucas application" />
+    <title>Spearman's Rank Calculator, Newton's Method Calculator, Fixed Point Iteration Calculator, Decimal Search Calculator | Maccery.com/maths</title>
+    <meta name="keywords" content="newton-raphson, newton's method calculator, newton raphson, fixed point, fixed point iteration, rearrangement, decimal search, calculator, spearmans, srcc, rank, standard deviation, iqr, quartiles, upper quartile, lower quartile, range, root mean square deviation, median, mean, calculator, generator, spearman's rank calculator, spearmans rank calculator, calculate spearmans rank">
     <meta name="author" content="Maccery">
     <meta name="Rating" content="General">
     <link rel="stylesheet" href="{{ asset('css/ps.css') }}" type="text/css"/>
     <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1; user-scalable=0;">
-    <title>Personal Statement Helper | UCAS line simulator, word count and more! | Maccery.com</title>
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/ps/favicon.ico') }}">
+    <meta property="description" content="Calculate Spearman's Rank, Newton-Raphson, Fixed Point Iteration, Decimal Search and more. All with workings. "/>
+
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
     <script type="text/javascript">
 
         var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-20685634-3']);
+        _gaq.push(['_setAccount', 'UA-20685634-2']);
         _gaq.push(['_trackPageview']);
 
         (function() {
@@ -36,40 +33,18 @@
     </script>
 </head>
 <body>
-<div class="navbar navbar-inverse" role="navigation">
-    <div class="navbar-header">
-
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-    </div>
-
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-            <li><a href="#header">Home</a></li>
-            <li><a href="#statistics">Spearman's Rank, Statistics Calculator</a></li>
-            <li><a href="#decimal-search">Decimal Search</a></li>
-            <li><a href="#newton-raphson">Newton's Method</a></li>
-            <li><a href="#fixed-point">Fixed Point Iteration</a></li>
-        </ul>
-    </div>
-</div>
-
 <div class="content-row" id="header">
     <div class="container">
-        <h1><a href="/">maccery</a>/maths</h1>
+        <h1><a href="/">maccery</a>/<a href="{{ route('maths') }}">maths</a></h1>
         <h3>helping gcse/a-level students</h3>
     </div>
 </div>
 @yield('content')
 <hr>
-<div id="copyright" class="container">
+<footer class="container">
     <h4>Like this? <a href="{{ route('home') }}">Get in touch.</a></h4>
-    <p>Copyright &copy; 2013-16 <a href="http://maccery.com" target="_blank">Maccery</a>. <b>Submitted personal statements are not stored.</b></p>
-</div>
+    <p>Copyright &copy; 2011-16 <a href="http://maccery.com" target="_blank">Maccery</a>. <b>Submitted personal statements are not stored.</b></p>
+</footer>
 
 <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
 <script src="{{ asset('js/global.js') }}" type="text/javascript"></script>

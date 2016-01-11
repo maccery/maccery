@@ -1,5 +1,6 @@
 @extends('maths.master')
 @section('content')
+@include('maths.navigation')
 <div class="container" id="newton-raphson">
     <h2>Newton's method calculator</h2>
 
@@ -39,6 +40,7 @@
             <button type="submit" class="btn btn-danger">Calculate</button>
         </div>
     </form>
+    <hr>
     <div class="result" id="newton-raphson-result"></div>
 </div>
 @endsection

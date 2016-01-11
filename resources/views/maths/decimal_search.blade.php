@@ -1,5 +1,6 @@
 @extends('maths.master')
 @section('content')
+    @include('maths.navigation')
 <div class="container" id="decimal-search">
     <h2>Decimal search calculator</h2>
 
@@ -31,6 +32,9 @@
             <button type="submit" class="btn btn-danger">Calculate</button>
         </div>
     </form>
-    <div class="result" id="decimal-search-result"></div>
+    <hr>
+    <div class="result" id="decimal-search-result">
+    </div>
 </div>
+
 @endsection
