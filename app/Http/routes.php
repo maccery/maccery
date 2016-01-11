@@ -19,6 +19,21 @@ Route::get('/ps', function () {
     return view('ps/index');
 });
 
+Route::get('/maths', function () {
+    return view('maths/index');
+});
+Route::get('/maths/spearmans-rank', function () {
+    return view('maths/spearmans_rank');
+});
+Route::get('/maths/decimal-search', function () {
+    return view('maths/decimal_search');
+});
+Route::get('/maths/newtons-method', function () {
+    return view('maths/newtons_method');
+});
+Route::get('/maths/fixed-point', function () {
+    return view('maths/fixed_point');
+});
 
 Route::post('/ps/results', 'PSController@result')->name('ps');
 

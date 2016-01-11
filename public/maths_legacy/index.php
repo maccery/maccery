@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script src="https://use.typekit.net/ghh5jln.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8"/>
     <meta name="copyright" content="Copyright Maccery.com 2013">
     <meta name="email" content="tom@yourtaximeter.com">
@@ -11,9 +13,7 @@
     <meta name="keywords" content="newton-raphson, newton's method calculator, newton raphson, fixed point, fixed point iteration, rearrangement, decimal search, calculator, spearmans, srcc, rank, standard deviation, iqr, quartiles, upper quartile, lower quartile, range, root mean square deviation, median, mean, calculator, generator, spearman's rank calculator, spearmans rank calculator, calculate spearmans rank">
     <meta name="author" content="Maccery">
     <meta name="Rating" content="General">
-    <link rel="stylesheet" href="../css/framework.css" type="text/css"/>
-    <link rel="stylesheet" href="../css/global.css" type="text/css"/>
-    <link rel="stylesheet" href="../css/maths.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/ps.css" type="text/css"/>
     <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1; user-scalable=0;">
 	<meta property="description" content="Calculate Spearman's Rank, Newton-Raphson, Fixed Point Iteration, Decimal Search and more. All with workings. "/>
 
@@ -33,7 +33,7 @@
     </script>
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="navbar navbar-inverse" role="navigation">
         <div class="navbar-header">
 
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -55,10 +55,11 @@
         </div>
     </div>
 
-    <div class="jumbotron" id="header">
-        <h1><a href="/">maccery</a>/maths</h1>
-
-        <h2><i>perfect</i> for gcse/a-level students</h2>
+    <div class="content-row" id="header">
+        <div class="container">
+            <h1><a href="/">maccery</a>/maths</h1>
+            <h3>helping gcse/a-level students</h3>
+        </div>
     </div>
     <div class="container" id="statistics">
         <h2>Statistics calculator</h2>
@@ -204,8 +205,8 @@
     </div>
     <hr>
     <div id="copyright" class="container">
-        <p>Copyright &copy; <?php date_default_timezone_set('Europe/London'); echo date('Y'); ?> <a href="http://maccery.com" target="_blank">Maccery</a>. Design and
-            coded by <a href="http://maccery.com" target="_blank">Maccery</a>.</p>
+        <h4>Like this? <a href="{{ route('home') }}">Get in touch.</a></h4>
+        <p>Copyright &copy; 2013-16 <a href="http://maccery.com" target="_blank">Maccery</a>. <b>Submitted personal statements are not stored.</b></p>
     </div>
 
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
