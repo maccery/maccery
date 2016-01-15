@@ -18,6 +18,7 @@
     <meta name="author" content="Maccery">
     <meta name="Rating" content="General">
     <link rel="stylesheet" href="{{ asset('css/ps.css') }}" type="text/css"/>
+
     <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1; user-scalable=0;">
     <title>Personal Statement Helper | UCAS line simulator, word count and more! | Maccery.com</title>
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/ps/favicon.ico') }}">
