@@ -1,9 +1,9 @@
 
 <html>
 <head>
-    <script src="https://use.typekit.net/ghh5jln.js"></script>
+    <script src="//use.typekit.net/ghh5jln.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="{{ asset('js/app.js') }}"></script>
     <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}">
     <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8"/>
@@ -54,16 +54,17 @@
 </div>
 <div class="content-row-grey text-center">
     <div class="container padding">
-        <a href="http://yourtaximeter.com">
-            <div class="col-sm-6">
-                <h2>YourTaximeter</h2>
-                <p>A startup aimed at taxi fare estimates. I founded and codeveloped this site, currently 60k a month using it.</p>
-            </div>
-        </a>
+        <div class="row">
         <a href="http://yatter.chat">
             <div class="col-sm-6">
                 <h2>Yatter</h2>
                 <p>Connecting university students with nearby friends. I cofounded and continue to develop this while at university.</p>
+            </div>
+        </a>
+        <a href="http://yourtaximeter.com">
+            <div class="col-sm-6">
+                <h2>YourTaximeter</h2>
+                <p>A startup aimed at taxi fare estimates. I founded and codeveloped this site, currently 60k a month using it.</p>
             </div>
         </a>
         <a href="{{ route('maths') }}">
@@ -78,6 +79,16 @@
                 <p>Hundreds of thousands have used my personal statement analyser for university applications.</p>
             </div>
         </a>
+        </div>
+        <div class="row">
+            <a href="http://isitbusy.in">
+            <div class="col-sm-6">
+                <h2>isitbusy.in</h2>
+                <p>A small project that I plan to open-source, which uses public data from universities to estimate how busy
+                buildings will be at certain times of day.</p>
+            </div>
+            </a>
+        </div>
     </div>
 </div>
 </html>
