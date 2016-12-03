@@ -26,7 +26,7 @@
 <script>
     $(function(){
         $(".typing").typed({
-            strings: ['<a href="https://angel.co/tom-macmichael" target="_blank">angel.co</a>', '<a href="https://uk.linkedin.com/in/tommacmichael" target="_blank">linkedin</a>', '<a href="http://medium.com/@maccery" target="_blank">medium</a>', '<a href="http://twitter.com/maccery" target="_blank">twitter</a>', '<a href="http://instagram.com/maccery" target="_blank">instagram</a>'],
+            strings: ['<a href="https://github.com/maccery" target="_blank">github</a>', '<a href="https://angel.co/tom-macmichael" target="_blank">angel.co</a>', '<a href="https://uk.linkedin.com/in/tommacmichael" target="_blank">linkedin</a>', '<a href="http://medium.com/@maccery" target="_blank">medium</a>', '<a href="http://twitter.com/maccery" target="_blank">twitter</a>', '<a href="http://instagram.com/maccery" target="_blank">instagram</a>'],
             typeSpeed: 50,
             backSpeed: 50,
             backDelay: 1200,
@@ -55,38 +55,49 @@
 <div class="content-row-grey text-center">
     <div class="container padding">
         <div class="row">
-        <a href="http://yatter.chat">
-            <div class="col-sm-6">
-                <h2>Yatter</h2>
-                <p>Connecting university students with nearby friends. I cofounded and continue to develop this while at university.</p>
-            </div>
-        </a>
-        <a href="http://yourtaximeter.com">
-            <div class="col-sm-6">
-                <h2>YourTaximeter</h2>
-                <p>A startup aimed at taxi fare estimates. I founded and codeveloped this site, currently 60k a month using it.</p>
-            </div>
-        </a>
-        <a href="{{ route('maths') }}">
-            <div class="col-sm-6">
-                <h2>Maths Tools</h2>
-                <p>10,000 people a month use my simple maths tools that I made when I was 16.</p>
-            </div>
-        </a>
-        <a href="{{ route('ps') }}">
-            <div class="col-sm-6">
-                <h2>Personal Statement Tools</h2>
-                <p>Hundreds of thousands have used my personal statement analyser for university applications.</p>
-            </div>
-        </a>
+            <a href="http://yatter.chat">
+                <div class="col-sm-6">
+                    <h2>Yatter</h2>
+                    <p>Connecting university students with nearby friends. I cofounded and continue to develop this
+                        while at university.</p>
+                </div>
+            </a>
+            <a href="http://yourtaximeter.com">
+                <div class="col-sm-6">
+                    <h2>YourTaximeter</h2>
+                    <p>A startup aimed at taxi fare estimates. I founded and codeveloped this site, currently 70k a
+                        month using it.</p>
+                </div>
+            </a>
+        </div>
+        <div class="row">
+            <a href="{{ route('maths') }}">
+                <div class="col-sm-6">
+                    <h2>Maths Tools</h2>
+                    <p>10,000 people a month use my simple maths tools that I made when I was 16.</p>
+                </div>
+            </a>
+            <a href="{{ route('ps') }}">
+                <div class="col-sm-6">
+                    <h2>Personal Statement Tools</h2>
+                    <p>Hundreds of thousands have used my personal statement analyser for university applications.</p>
+                </div>
+            </a>
         </div>
         <div class="row">
             <a href="http://isitbusy.in">
-            <div class="col-sm-6">
-                <h2>isitbusy.in</h2>
-                <p>A small project that I plan to open-source, which uses public data from universities to estimate how busy
-                buildings will be at certain times of day.</p>
-            </div>
+                <div class="col-sm-6">
+                    <h2>isitbusy.in</h2>
+                    <p>A small project that I plan to open-source, which uses public data from universities to estimate
+                        how busy
+                        buildings will be at certain times of day.</p>
+                </div>
+            </a>
+            <a href="http://edinburghcharityfashionshow.co.uk">
+                <div class="col-sm-6">
+                    <h2>ECFS 2017</h2>
+                    <p>The largest student-led charity fashion show in Europe. Edinburgh Charity Fashion Show's 2017 website.</p>
+                </div>
             </a>
         </div>
     </div>
