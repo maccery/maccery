@@ -23,18 +23,6 @@
 <div id="splash-header-wrapper" class="splash-header">
     <div id="splash-header" class="splash-header"></div>
 </div>
-<script>
-    $(function(){
-        $(".typing").typed({
-            strings: ['<a href="https://github.com/maccery" target="_blank">github</a>', '<a href="https://angel.co/tom-macmichael" target="_blank">angel.co</a>', '<a href="https://uk.linkedin.com/in/tommacmichael" target="_blank">linkedin</a>', '<a href="http://medium.com/@maccery" target="_blank">medium</a>', '<a href="http://twitter.com/maccery" target="_blank">twitter</a>', '<a href="http://instagram.com/maccery" target="_blank">instagram</a>'],
-            typeSpeed: 50,
-            backSpeed: 50,
-            backDelay: 1200,
-            contentType: 'html',
-            loop: true,
-        });
-    });
-</script>
 <div class="intro">
     <header class="splash-header">
         <div class="text-vertical-center center">
@@ -42,15 +30,6 @@
             <h2>I like making stuff</h2>
         </div>
     </header>
-    <div class="content-row">
-        <div class="container jumbotron">
-            <div class="row text-center">
-                <p id="head"><small>want to know more?</small><br>
-                    stalk me on <span class="typing"></span>
-                </p>
-            </div>
-        </div>
-    </div>
 </div>
 <div class="content-row-grey text-center">
     <div class="container padding">
@@ -58,14 +37,13 @@
             <a href="http://yatter.chat">
                 <div class="col-sm-6">
                     <h2>Yatter</h2>
-                    <p>Connecting university students with nearby friends. I cofounded and continue to develop this
-                        while at university.</p>
+                    <p>Connecting university students with nearby friends.</p>
                 </div>
             </a>
             <a href="http://yourtaximeter.com">
                 <div class="col-sm-6">
                     <h2>YourTaximeter</h2>
-                    <p>A startup aimed at taxi fare estimates. I founded and codeveloped this site, currently 70k a
+                    <p>A startup aimed at taxi fare estimates. I founded and codeveloped this site, currently 120k a
                         month using it.</p>
                 </div>
             </a>
@@ -95,8 +73,8 @@
             </a>
             <a href="http://edinburghcharityfashionshow.co.uk">
                 <div class="col-sm-6">
-                    <h2>ECFS 2017</h2>
-                    <p>The largest student-led charity fashion show in Europe. Edinburgh Charity Fashion Show's 2017 website.</p>
+                    <h2>PastPaper.info</h2>
+                    <p>An open-source project for crowdsourcing answers to university past papers.</p>
                 </div>
             </a>
         </div>
