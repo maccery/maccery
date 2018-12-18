@@ -71,7 +71,7 @@
                         buildings will be at certain times of day.</p>
                 </div>
             </a>
-            <a href="http://edinburghcharityfashionshow.co.uk">
+            <a href="http://pastpaper.info">
                 <div class="col-sm-6">
                     <h2>PastPaper.info</h2>
                     <p>An open-source project for crowdsourcing answers to university past papers.</p>
