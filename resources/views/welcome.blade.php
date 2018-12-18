@@ -4,8 +4,8 @@
     <script src="//use.typekit.net/ghh5jln.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="{{ asset('js/app.js') }}"></script>
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}">
+    <script src="{{ secure_asset('js/app.js') }}"></script>
+    <link rel="stylesheet" type="text/css" href="{{ secure_asset('css/app.css') }}">
     <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8"/>
     <meta name="keywords" content="developer, tom macmichael, student, edinburgh, php, html, maths"/>
     <meta name="copyright" content="Copyright Maccery.com 2013">
@@ -16,7 +16,7 @@
     <meta name="ROBOTS" content="INDEX, FOLLOW"/>
     <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1; user-scalable=0;">
     <meta property="description" content="Freelance web developer from The University of Edinburgh."/>
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ secure_asset('images/favicon.ico') }}">
     <title>Maccery - Web Development</title>
 </head>
 <body>
